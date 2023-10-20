@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.mms" name="Missing Movies" version="4.1.0" provider-name="takoi, juokelis">
+<addon id="plugin.video.mms" name="Missing Movies" version="4.1.1" provider-name="takoi, juokelis, kamisama91">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.routing" version="0.2.3+matrix.1"/>
@@ -11,6 +11,9 @@
         <summary lang="en_GB">Find missing videos</summary>
         <description lang="en_GB">Scans media sources for movies, TV shows and episodes that got missed during the library scan. This add-on can used to identify, play or manually add missing videos to your media library.</description>
         <news>
+v4.1.1 (2023-10-21) by kamisama91
+- Add SFTP source support.
+
 v4.1.0 (2020-04-05) by juokelis
 - Ported to python 3.0 to run on v19 Matrix.
 
@@ -19,7 +22,7 @@ v4.0.5 (2016-01-17) by tamland
         </news>
         <license>GPL-3.0-or-later</license>
         <platform>all</platform>
-        <source>https://github.com/tamland/kodi-missing-movies</source>
+        <source>https://github.com/kamisama91/kodi-missing-movies</source>
         <forum>https://forum.kodi.tv/showthread.php?tid=118263</forum>
         <assets>
             <icon>resources/media/icon.png</icon>

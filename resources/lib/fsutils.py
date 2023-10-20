@@ -27,7 +27,12 @@ monitor = xbmc.Monitor()
 
 def _listdir(path):
     try:
-        return xbmcvfs.listdir(path)
+        dirs, files = xbmcvfs.listdir(path)
+        if path.startswith('sftp://'):
+            basedir = os.path.basename(path)
+            dirs = [item[len(basedir):] for item in dirs]
+            files = [item[len(basedir):] for item in files]
+        return dirs, files
     except NameError:
         pass
 

@@ -4,6 +4,9 @@ Scans media sources for movies, TV shows and episodes that got missed during the
 
 Changelog
 
+**4.1.1**
+- Add SFTP source support
+
 **4.1.0**
 - Ported to python 3.0 to run on v19 Matrix
 
